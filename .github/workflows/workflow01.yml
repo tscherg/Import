@@ -5,10 +5,4 @@ jobs:
     name: TestingWorkflowJob1
     runs-on: ubuntu-latest
     steps:
-        
-        - run: echo "This job was triggered by a${{ github.event_name }} event."
-
-        -name: Setup dotnet on runner
-         uses: actions/setup-dotnet@v1
-         with:
-            dotnet-version: '3.x'
+      - run: echo "This job was triggered by a${{ github.event_name }} event."
