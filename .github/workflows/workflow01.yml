@@ -10,6 +10,6 @@ jobs:
   Test-Job2:
     name: TestingWorkflowJob2
     runs-on: ubuntu-latest
-    needs: TestingWorkflowJob1
+    needs: Test-Job
     steps:
         - run: echo "This is my second job"
