@@ -6,3 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This job was triggered by a${{ github.event_name }} event."
+
+  Test-Job2:
+    name: TestingWorkflowJob2
+    runs-on: ubuntu-latest
+    needs: TestingWorkflowJob1
+    steps:
+        - run: echo "This is my second job"
